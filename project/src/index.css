@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Form field focus styles */
+input:focus, textarea:focus, select:focus {
+  @apply ring-2 ring-[#ff6600] ring-opacity-50 outline-none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-[#ff6600] text-white px-6 py-3 rounded-lg transition-all duration-300;
+}
+
+.btn-primary:hover {
+  @apply bg-[#e65c00] transform scale-[1.02];
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300;
+}
+
+.card-hover:hover {
+  @apply transform -translate-y-1 shadow-lg;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Form field focus styles */
+input:focus, textarea:focus, select:focus {
+  @apply ring-2 ring-[#ff6600] ring-opacity-50 outline-none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-[#ff6600] text-white px-6 py-3 rounded-lg transition-all duration-300;
+}
+
+.btn-primary:hover {
+  @apply bg-[#e65c00] transform scale-[1.02];
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300;
+}
+
+.card-hover:hover {
+  @apply transform -translate-y-1 shadow-lg;
+}
